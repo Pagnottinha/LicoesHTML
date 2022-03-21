@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício 15</title>
+    </head>
+    <body>
+        <h3>Par ou ímpar</h3>
+        <p>Escreva um programa que joga par ou ímpar com o usuário.</p>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;time.h&gt;
+            #include &lt;stdlib.h&gt;
+            
+            int main(void) {
+            
+                printf("Bora jogar par ou ímpar?\n");
+            
+                int decisao;
+                printf("Digite 0 para par e 1 para ímpar: ");
+                scanf("%d", &decisao);
+            
+                if (decisao == 0) {
+                    printf("Você escolheu par!\n");
+                }
+                else
+                {
+                    printf("Você escolheu ímpar!\n");
+                }
+                
+                int numDedosJogador;
+                printf("Quantos dedos você colocou? ");
+                scanf("%d", &numDedosJogador);
+            
+                
+                srand(time(NULL));
+                int numDedosMaquina = rand() % 5 + 1;
+                int resultado = (numDedosMaquina + numDedosJogador) % 2;
+            
+                if (resultado == decisao) {
+                    printf("Você ganhou!\nEu coloquei %d dedos\n", numDedosMaquina);
+                }
+                else
+                {
+                    printf("Você perdeu!\nEu coloquei %d dedos\n", numDedosMaquina);
+                }
+                
+                return 0;
+            }
+        </pre>
+    </body>
+</html>
