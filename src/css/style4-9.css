@@ -1,0 +1,20 @@
+#menor
+{
+    width: 200px;
+    height: 200px;
+    background-image: url("../Img/srIncrivel1.jpg");
+}
+
+#meio
+{
+    width: 300px;
+    height: 300px;
+    background-image: url("../Img/srIncrivel2.jpg");
+}
+
+#maior
+{
+    width: 450px;
+    height: 450px;
+    background-image: url("../Img/srIncrivel3.jpg");
+}
